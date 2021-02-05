@@ -1,0 +1,89 @@
+
+
+/* main ::content div */
+.societyLogo{
+    text-align: center;
+    padding: 0 2rem;
+    margin: 3rem;
+    
+}
+.societyLogo h1{
+    font-size: 5rem;
+}
+.aboutImg{
+    display: none;
+}
+.boxRight{
+    margin: 1rem 0;    
+    padding-left: 2rem;
+    width: 90%;
+}
+.boxLeft{
+    margin: 1rem 0;
+    text-align: center;
+    width: 90%;
+}
+.boxRight img{
+    display: none;
+}
+.col-md-5{
+    text-align: center;
+}
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fabout{    
+    margin: 1rem 1rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+.fsupport{
+    width: 30%; 
+    margin : 1rem 0.6rem;
+    padding : 0.6rem;
+    font-size: 1.7rem;
+}
+.fsupport ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0.5rem -0.2rem;
+    
+}
+.fsupport ul li a{
+    height: 1rem;
+    margin: 0.2rem;
+   
+}
+
+.fcenter{
+    margin: 1rem 1rem;
+    font-size: 1.5rem;
+}
+.social{
+    margin: 0.5rem;
+}
+a i{
+    width: 1rem;
+}
+.social a i{
+    width: 3rem;
+}
+.societyLogo{
+    animation: moveBanner 2s forwards;
+}    
+.mainContent{
+    animation: moveBanner 2s forwards;
+}
+    @keyframes moveBanner {
+0% {
+  transform: translateY(40rem) rotateY(-20deg);
+}
+100% {
+  transform: translateY(0) rotateY(0);
+  opacity: 1;
+}
+}

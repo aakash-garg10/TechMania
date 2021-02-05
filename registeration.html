@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>register</title>
+  <link rel="stylesheet" href="registeration.css">
+</head>
+
+<body>
+  <section>
+
+    <div id="Registration">
+      <h1>WELCOME TO TECHMANIA</h1>
+      <h2>Registration For New User!!!</h2>
+    <input type="text" name="email" id="email" placeholder="Enter Your Email">
+    <input type="password" name="pass" id="password" placeholder="Enter Your Password (Min. 6 character)"><br>
+    <button onclick="RegisterUser()">Register</button>
+    <a href="index.html">Click here to login</a>
+  </div>
+</section>
+  
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyATvXjaWzx5G4xF0JL1zrfaigD_e0EbXWw",
+      authDomain: "login-1c097.firebaseapp.com",
+      databaseURL: "https://login-1c097.firebaseio.com",
+      projectId: "login-1c097",
+      storageBucket: "login-1c097.appspot.com",
+      messagingSenderId: "586146631256",
+      appId: "1:586146631256:web:97d13c862aff886389842d"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="registeration.js"></script>
+</body>
+
+</html>

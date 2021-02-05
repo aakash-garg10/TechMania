@@ -1,0 +1,166 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 9px 18px #100e10;
+  background:radial-gradient(
+    circle,
+    violet,
+    indigo,
+    blue,
+    green,
+    rgb(255, 187, 0),
+    orange,
+    red,
+    magenta
+  );
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+h3{
+  font-size: 4rem;
+}
+p{
+  font-size: 2rem;
+}
+
+input,button {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+.main-div,.loggedin-div {
+  width: 50%;
+  margin-top: 120px;
+  padding: 20px;
+  display: none;
+}
+
+.main-div input {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  padding: 15px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+
+.main-div input:focus {
+  border: 1px solid #777;
+}
+
+.main-div button,.loggedin-div button {
+  background: #295ac2;
+  color: #fff;
+  border: 1px solid #5d8ffc;
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  font-size: 2rem;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+
+.main-div button:hover,
+.loggedin-div button:hover {
+  background: #fff;
+  color: #5d8ffc;
+  border: 1px solid #5d8ffc;
+  cursor: pointer;
+}
+#homeLink,#registerLink {
+  background: #295ac2;
+  color: #fff;
+  border: 1px solid #5d8ffc;
+  text-align: center;
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  font-size: 2rem;
+  width: 96%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  margin: 5px 0;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+}
+#homeLink:hover,
+#registerLink:hover {
+  background: #fff;
+  color: #5d8ffc;
+  border: 1px solid #5d8ffc;
+  cursor: pointer;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .main-div,.loggedin-div {
+    width: 90%;
+    margin-top: 120px;
+    padding: 20px;
+        
+  }
+  h1{
+    font-size: 7rem;
+  }
+  h3{
+    font-size: 6rem;
+  }
+  p{
+    font-size: 3rem;
+  }
+  input{
+    font-size: 4rem;
+  }
+  button,a{
+    font-size: 4rem !important;
+  }
+}
+
+
+

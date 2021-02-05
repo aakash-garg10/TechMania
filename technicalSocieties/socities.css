@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: url(imgs/bg.jpg);
+  color: rgb(130, 236, 218);
+  font-size: 2rem;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    -45deg,
+    violet,
+    indigo,
+    blue,
+    green,
+    rgb(23, 201, 133),
+    rgb(146, 192, 18),
+    orange,
+    magenta,
+    rgb(204, 58, 172),
+    red
+  );
+  background-size: 400% 400%;
+  -webkit-animation: gradient 12s ease-in-out infinite;
+  animation: gradient 12s ease-in-out infinite;
+}
+
+.form-inline input,
+.form-inline button {
+  font-size: 2rem;
+}
+
+.navbar {
+  background-color: rgb(3, 20, 51);
+  opacity: 0.9;
+}
+.navbar-toggler-icon {
+  background: url(imgs/hamBurgerIcon.png) !important;
+  height: 30px;
+  width: 30px;
+  border: 2px solid cyan;
+}
+.nav-item a {
+  color: rgb(130, 236, 218);
+  transition: all 0.2s ease-in;
+  margin: 5px 10px;
+  font-weight: bold;
+}
+.nav-item a:hover {
+  background-color: blue;
+  border-radius: 35%;
+}
+.dropdown-menu a:hover {
+  background-color: white;
+  border-radius: 5%;
+  width: 90%;
+}
+.dropdown-menu {
+  background-color: rgb(3, 20, 51);
+  font-size: 2rem;
+}
+.navbar-brand img {
+  transition: all 0.2s ease-in;
+  margin: 2px 2px;
+}
+.navbar-brand img:hover {
+  transform: scale(1.2);
+}
+
+.societyLogo {
+  text-align: center;
+  margin: 5rem;
+}
+
+#SLogo {
+  height: 30rem;
+  width: 30rem;
+  border-radius: 50%;
+  box-shadow: 0px 3px 70px 25px rgba(237, 228, 237, 0.57);
+}
+
+.boxLeft {
+  background-color: rgba(37, 38, 39, 0.678);
+  margin: 4rem 3rem 4rem 2rem;
+  padding: 10px;
+  border: 4px solid rgb(243, 237, 237);
+  border-radius: 5%;
+  width: 80%;
+  box-shadow: -19px 11px 14px 5px rgba(237, 228, 237, 0.938);
+}
+
+.boxRight {
+  background-color: rgba(37, 38, 39, 0.678);
+  position: relative;
+  float: right;
+  margin: 4rem 3rem 4rem 2rem;
+  padding: 10px;
+  border: 4px solid rgb(238, 232, 232);
+  border-radius: 5%;
+  width: 80%;
+  box-shadow: 17px 11px 14px 5px rgba(237, 228, 237, 0.925);
+}
+
+a,
+p {
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+h2 {
+  font-size: 4rem;
+  letter-spacing: 2px;
+  margin: 5px;
+  text-decoration: underline;
+  line-height: 5rem;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  text-shadow: 2px 9px 18px #100e10;
+}
+
+h1 {
+  font-size: 6rem;
+  letter-spacing: 0.2rem;
+  margin: 1.5rem;
+  text-decoration: underline;
+  line-height: 5rem;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  text-shadow: 2px 9px 18px #100e10;
+}
+
+footer {
+  background-color: rgb(3, 20, 51);
+  display: flex;
+  margin: 1rem 0 0 0;
+  width: 100%;
+}
+
+.fabout {
+  width: 30%;
+  margin: 1rem 2rem;
+  padding: 2rem;
+  font-size: 1.8rem;
+}
+
+.fsupport {
+  width: 30%;
+  margin: 1rem 3rem;
+  padding: 1rem;
+  font-size: 1.7rem;
+}
+.fsupport ul {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+.fsupport ul li a {
+  height: 2rem;
+  padding: 0.4rem;
+  margin: 1rem;
+  text-decoration: none;
+  color: rgb(130, 236, 218);
+}
+
+.fcenter {
+  margin: 1rem 3rem;
+  order: 2;
+  width: 25%;
+  font-size: 1.8rem;
+}
+.social {
+  margin: 2rem;
+}
+
+a i {
+  transition: all 0.3 linear;
+  margin: 2rem 2rem;
+}
+.social a i {
+  transition: all 0.3 linear;
+  margin: 2rem 0.4rem;
+  font-size: 4rem;
+}
+a:hover i {
+  transform: scale(1.5);
+}
+.fa-facebook-square {
+  color: #3b5998;
+}
+.fa-youtube {
+  color: red;
+}
+.fa-twitter {
+  color: #00acee;
+}
+.fa-github {
+  color: black;
+}
+.fa-linkedin-in {
+  color: #0e76a8;
+}
+.fa-instagram-square {
+  color: #b33dad;
+}
+.fa-medium {
+  color: white;
+}
+img.map-frame {
+  transition: all 0.5s ease-in-out;
+  height: 250px;
+  width: 250px;
+}
+img.map-frame:hover {
+  transform: scale(1.3);
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.societyLogo {
+  animation: moveBanner 2s forwards;
+}
+
+.mainContent {
+  animation: moveBanner 2s forwards;
+}
+@keyframes moveBanner {
+  0% {
+    transform: translateY(40rem) rotateY(-20deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+  }
+}

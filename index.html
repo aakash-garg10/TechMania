@@ -1,0 +1,54 @@
+<html>
+
+<head>
+  <title> Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="firebaseWebLogin/style.css" />
+</head>
+
+<body>
+  <section>
+
+    <div id="login_div" class="main-div">
+      <h1>Welcome To TechMania</h1>
+      <input type="email" placeholder="Email..." id="email_field" />
+      <input type="password" placeholder="Password..." id="password_field" />
+
+      <button onclick="login()">Login to Account</button>
+      <a href="registeration.html" id="registerLink">Register as a New User</a>
+    </div>
+
+    <div id="user_div" class="loggedin-div">
+      <h3>Welcome User</h3>
+      <p id="user_para">Welcome to TechMania. You're currently logged in.</p>
+      <a href="Home.html" id="homeLink">Click here to visit home page</a>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </section>
+
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyATvXjaWzx5G4xF0JL1zrfaigD_e0EbXWw",
+      authDomain: "login-1c097.firebaseapp.com",
+      databaseURL: "https://login-1c097.firebaseio.com",
+      projectId: "login-1c097",
+      storageBucket: "login-1c097.appspot.com",
+      messagingSenderId: "586146631256",
+      appId: "1:586146631256:web:97d13c862aff886389842d"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="firebaseWebLogin/index.js"></script>
+
+</body>
+
+</html>
